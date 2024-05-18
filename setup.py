@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='mgds',
       version='0.1',
@@ -6,5 +6,5 @@ setup(name='mgds',
       author='Nerogar',
       url='https://github.com/Nerogar/stable-diffusion-dataloader/',
       package_dir={'': 'src'},
-      packages=['mgds'],
+      packages=find_packages(where='src'),
       )
